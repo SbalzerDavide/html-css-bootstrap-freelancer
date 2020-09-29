@@ -1,3 +1,11 @@
+/* utilities */
+.fas-star{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
 /* header */
 header .navbar-default{
     background-color: #2c3e50 ;
@@ -49,49 +57,67 @@ header .navbar{
 /* main */
 /* start bootstrap */
 main .start-bootstrap{
-    height: 400px;
     background-color: #1abc9c;
+    color: white;
+    padding: 50px;
 }
 
-main .portfolio-title{
-    background-color: aquamarine;
-    height: 100px;
+main .start-bootstrap img{
+    height: 200px;
+}
+main h1{
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
+
+/* portfolio */
 main .portfolio{
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
+main .portfolio .fas-star{
+    color: #2c3e50;
+}
+
 [class*="portfolio-box-"]{
-    height: 300px;
+    /* height: 300px; */
     margin-bottom: 50px;
     border-radius: 5px;
 }
 
-main .portfolio-box-1{
+[class*="portfolio-box-"] img{
+    /* height: 300px; */
+    max-height: 300px;
+    max-width: 100%;
+}
+
+/* main .portfolio-box-1{
     background-color: #ba4c63;
-}
+} */
 
-main .portfolio-box-2{
+/* main .portfolio-box-2{
     background-color: #1fa4b6;
-}
+} */
 
-main .portfolio-box-3{
+/* main .portfolio-box-3{
     background-color: #130f0f;
-}
+} */
 
-main .portfolio-box-4{
+/* main .portfolio-box-4{
     background-color: #1d83c1;
-}
+} */
 
-main .portfolio-box-5{
+/* main .portfolio-box-5{
     background-color: #1037b5;
-}
+} */
 
-main .portfolio-box-6{
+/* main .portfolio-box-6{
     background-color: #ccb2a3;
-}
+} */
+
+
 
 /* about */
 main .about{
@@ -155,25 +181,39 @@ footer .copyright{
 
 /* media query sm */
 @media screen and (min-width:768px){
-    [class*="portfolio-box-"]{
+    /* [class*="portfolio-box-"]{
         height: 300px;
+    } */
+
+    [class*="portfolio-box-"] img{
+        height: 250px;
     }
 
 }
 
 /* media query md */
-@media screen and (min-width:970px){
-    [class*="portfolio-box-"]{
+@media screen and (min-width:992px){
+    /* [class*="portfolio-box-"]{
         height: 225px;
+    } */
+
+    [class*="portfolio-box-"] img{
+        height: 200px;
     }
+    
 
 }
 
 /* media query lg */
 @media screen and (min-width:1200px){
-    [class*="portfolio-box-"]{
+    /* [class*="portfolio-box-"]{
+        height: 200px;
+    } */
+
+    [class*="portfolio-box-"] img{
         height: 200px;
     }
+    
 
 }
 
