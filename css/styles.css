@@ -1,7 +1,38 @@
 /* utilities */
-.fas-star{
+/* star */
+.star{
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+}
+
+.fas-star i{
     font-size: 30px;
-    margin-bottom: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.fas-star::after,
+.fas-star::before{
+    content: '';
+    display: inline-block;
+    border-radius: 2px;
+    width: 30%;
+    height: 3px;
+}
+
+.star .star-blue{
+    color: #2c3e50;
+}
+
+.fas-star.star-blue::after,
+.fas-star.star-blue::before{
+    background-color: #2c3e50;
+}
+
+.fas-star::after,
+.fas-star::before{
+    background-color: #ffffff;
 }
 
 
@@ -77,46 +108,37 @@ main .portfolio{
     padding-bottom: 30px;
 }
 
-main .portfolio .fas-star{
-    color: #2c3e50;
+main .portfolio-box{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
 }
 
-[class*="portfolio-box-"]{
-    /* height: 300px; */
+.portfolio-box .cover-green{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: turquoise;
+}
+
+.portfolio-box .cover-green i{
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* [class*="portfolio-box-"]{
     margin-bottom: 50px;
     border-radius: 5px;
-}
+} */
 
-[class*="portfolio-box-"] img{
-    /* height: 300px; */
+/* [class*="portfolio-box-"] img{
     max-height: 300px;
     max-width: 100%;
-}
-
-/* main .portfolio-box-1{
-    background-color: #ba4c63;
 } */
-
-/* main .portfolio-box-2{
-    background-color: #1fa4b6;
-} */
-
-/* main .portfolio-box-3{
-    background-color: #130f0f;
-} */
-
-/* main .portfolio-box-4{
-    background-color: #1d83c1;
-} */
-
-/* main .portfolio-box-5{
-    background-color: #1037b5;
-} */
-
-/* main .portfolio-box-6{
-    background-color: #ccb2a3;
-} */
-
 
 
 /* about */
@@ -185,9 +207,9 @@ footer .copyright{
         height: 300px;
     } */
 
-    [class*="portfolio-box-"] img{
+    /* [class*="portfolio-box-"] img{
         height: 250px;
-    }
+    } */
 
 }
 
@@ -197,9 +219,9 @@ footer .copyright{
         height: 225px;
     } */
 
-    [class*="portfolio-box-"] img{
+    /* [class*="portfolio-box-"] img{
         height: 200px;
-    }
+    } */
     
 
 }
@@ -210,9 +232,9 @@ footer .copyright{
         height: 200px;
     } */
 
-    [class*="portfolio-box-"] img{
+    /* [class*="portfolio-box-"] img{
         height: 200px;
-    }
+    } */
     
 
 }
