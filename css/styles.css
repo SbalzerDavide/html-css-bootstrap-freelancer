@@ -4,12 +4,13 @@
     width: 200px;
     margin: 20px auto;
     color: white;
+    text-align: center;
 }
 
 .fas-star i{
     font-size: 30px;
     vertical-align: middle;
-    margin: 0 5px;
+    width: 30%;
 }
 
 .fas-star::after,
@@ -48,11 +49,22 @@
     transition: background-color .4s;
 }
 
+.btn-green{
+    color: #fff;
+    background-color: #1abc9c;
+    border: transparent;
+    transition: background-color .4s;
+}
+
+.btn-green:hover{
+    background-color: #106756;
+    color: #fff;
+}
+
 .btn-primary:hover{
     background-color: #fff;
     color: #2c3e50;
     border: 2px solid white;
-
 }
 
 /* typography */
@@ -183,24 +195,37 @@ main .contact{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-main .contact .contact-title{
-    height: 50px;
-    background-color: darkorange;
+
+main .contact .form-group input,
+main .contact .form-group textarea{
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    color: #2c3e50;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #cecece;
+    box-shadow: none;
+    padding: 0;
 }
 
-main .contact .contact-input{
-    height: 50px;
-    background-color: darkslateblue;
-    border: 1px solid white;
-}
-
-main .contact .contact-submit{
-    height: 50px;
-    background-color: firebrick;
-    border: 1px solid white;
+main .contact .form-group textarea{
+    height: 200px;
 }
 
 
+.form-group{
+    margin-bottom: 0;
+}
+
+.form-control::placeholder{
+    color: #6c757d;
+    font-size: 16px;
+}
+
+form .btn-green{
+    margin-top: 20px;
+}
 /* footer */
 footer{
     background-color: #2c3e50;
