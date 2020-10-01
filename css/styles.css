@@ -76,10 +76,10 @@ h3{
 }
 
 /* header */
-header .navbar-default{
-    background-color: #2c3e50 ;
+    header .navbar-default{
     border-color: transparent;
     border-radius: 0;
+    background-color: #2c3e50 ;
 }
 
 header .navbar{
@@ -192,8 +192,8 @@ main .about{
 
 /* contact */
 main .contact{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 main .contact .form-group input,
@@ -229,18 +229,57 @@ form .btn-green{
 /* footer */
 footer{
     background-color: #2c3e50;
+    color: white;
 }
-footer .footer-col{
-    height: 150px;
-    background-color: white;
-    border: 1px solid black;
+
+footer p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+footer h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+footer li{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+}
+
+footer .footer-top{
+    padding: 50px 0;
+}
+
+footer .row{
+    padding: 0 15px;
+}
+
+footer li a{
+    position: relative;
+    top: 9px;
+    left: 1px;
+}
+
+footer .text-green{
+    color: #1abc9c;
 }
 
 footer .copyright{
-    height: 50px;
+    font-size: 10px;
     background-color: #1a252f;
+    text-align: center;
 }
 
+footer .copyright p{
+    margin-bottom: 0;
+    line-height: 50px;
+}
 
 
 /* media query sm */
@@ -257,28 +296,8 @@ footer .copyright{
 
 /* media query md */
 @media screen and (min-width:992px){
-    /* [class*="portfolio-box-"]{
-        height: 225px;
-    } */
-
-    /* [class*="portfolio-box-"] img{
-        height: 200px;
-    } */
-    
-
+    footer .footer-col{
+        text-align: center;
+        }    
 }
-
-/* media query lg */
-@media screen and (min-width:1200px){
-    /* [class*="portfolio-box-"]{
-        height: 200px;
-    } */
-
-    /* [class*="portfolio-box-"] img{
-        height: 200px;
-    } */
-    
-
-}
-
 
